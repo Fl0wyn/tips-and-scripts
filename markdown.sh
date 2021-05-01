@@ -13,9 +13,6 @@ function extractReadme() {
     listScripts JavaScript
 
     sed -i '1i\# Tips and Scripts' README.md
-
-    echo "
-    https://github.com/markedjs/marked"
 }
 
 function extractScripts() {
