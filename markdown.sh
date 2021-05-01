@@ -18,7 +18,6 @@ function extractReadme() {
 function extractScripts() {
     listScripts() {
         echo -e "# $1\n" >>${1}.md
-        #echo -e "[Retour](README.md)" >>${1}.md
         for i in $(find $1 -type f -name '*.*' | sed '/:/d;/^$/d'); do
             filtre=$(echo "$i" | cut -d/ -f2 | sed 's/_/ /g;s/.sh\|.js//g;s/^./\u&/')
             echo "## $filtre" >>${1}.md
