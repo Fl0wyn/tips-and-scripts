@@ -1,0 +1,7 @@
+LISTE_DES_PACKAGES_A_INSTALLER=(
+    nano
+    git
+)
+
+apt install ${LISTE_DES_PACKAGES_A_INSTALLER[@]}
+dnf install ${LISTE_DES_PACKAGES_A_INSTALLER[@]}
