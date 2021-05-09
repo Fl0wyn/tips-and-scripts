@@ -36,4 +36,4 @@ for i in $(ls -1 *.md); do
 done
 
 extractReadme
-#extractScripts
+extractScripts
